@@ -2,7 +2,7 @@ require('log-timestamp')
 const fs = require('fs')
 const { UMA_VOTING_ADDRESS } = require('../lib/constants')
 
-module.exports = async ({ dataFile, from }) => {
+module.exports = async ({ dataFile }) => {
   const claims = fs.readFileSync(dataFile).toString().split(/\r?\n/).filter(l => l),
         costs = await Promise.all(claims.map(async claim_data => {
           const voter = `0x${ claim_data.substr(34, 40) }` 

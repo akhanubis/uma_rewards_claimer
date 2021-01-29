@@ -29,7 +29,7 @@ module.exports = {
       })),
       forking: {
         url: ARCHIVE_NODE_RPC_URL || 'No url',
-        blockNumber: 11600511
+        blockNumber: 11747936
       }
     },
     development:  {
