@@ -105,7 +105,8 @@ dist
 
 
 artifacts/
-data/
+data/*
+!data/.gitkeep
 cache/
 out/*/
 !out/1/

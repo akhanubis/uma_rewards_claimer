@@ -13,7 +13,7 @@ Install deps
 
 `npm install`
 
-Build claims to a file
+Build claims and save to a file
 
 `npx hardhat run:env --network mainnet --env-file .\.env --script .\scripts\list_rewards.js --args roundId=9327,fromBlock=11600000,expectedPrice=57116867441561170`
 
