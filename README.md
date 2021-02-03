@@ -17,7 +17,7 @@ Build claims and save to a file
 
 `npx hardhat run:env --network mainnet --env-file .\.env --script .\scripts\list_rewards.js --args roundId=9327,fromBlock=11600000,expectedPrice=57116867441561170`
 
-Estimate gas used by each voter claiming their rewards (after block 11745747, will return low gas because rewards have already been claimed). Gas estimation is not exact, but you can compare the estimate of claiming separately vs the estimate returned by claim_rewards.js
+Estimate gas used by each voter claiming their rewards (after block 11745747, sample round 9327 will return low gas because rewards have already been claimed). Gas estimation is not exact, but you can compare the estimate of claiming separately vs the estimate returned by claim_rewards.js
 
 `npx hardhat run:env --network mainnet --env-file .\.env --script .\scripts\cost_by_voter.js --args dataFile=.\data\9327.csv`
 
