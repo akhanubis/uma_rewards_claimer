@@ -5,10 +5,6 @@ pragma solidity ^0.6.12;
 import './ChiToken.sol';
 
 abstract contract GasSaver {
-    constructor() public {
-        ChiToken(0x0000000000004946c0e9F43F4Dee607b0eF1fA1c).approve(address(this), 2**256 - 1);
-    }
-
     modifier discountCHI {
         uint256 gasStart = gasleft();
         _;
